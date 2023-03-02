@@ -15,7 +15,7 @@ public class PoolParty {
         watter = "salty watter";
         warm = "verry warm";
 
-watter = String.valueOf(!cold);
+
 
 swimming( pool, watter, cold, warm);
 
