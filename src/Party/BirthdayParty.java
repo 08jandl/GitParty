@@ -24,20 +24,20 @@ public class BirthdayParty {
         String partyTime = time.nextLine();
 
         //Now we are going to invite 11 kids to the party.
-        int guests = 1;
-        if (guests < 6) {
-        for (int i = 0; i < 5; i++) {
-            Scanner guest = new Scanner(System.in);
-            System.out.println("Guest" + guests + ": ");
-            String guestName = guest.nextLine();
-            guests = guests + 1;
-         }
+        int guests = 0;
 
+            for (int i = 0; i < 5; i++) {
+                Scanner guest = new Scanner(System.in);
+                System.out.println("Guest" + guests + ": ");
+                String guestName = guest.nextLine();
+                guests = guests + 1;
+            }
 
-        }
-            System.out.println("Total number of guests: " +guests);
-            System.out.println("We have enough number of guests! Don't Give out anymore invitations");
+        System.out.println("Total number of guests: " + guests);
 
+            if (guests==5) {
+                System.out.println("We have enough number of guests! Don't Give out anymore invitations");
+            }
         //Do we have all the things we need for the party:
         String basicPartyScenario;
         String completePartyScenario;
@@ -65,29 +65,30 @@ public class BirthdayParty {
         burger = true;
         balloons = true;
         candles = true;
-        confetti =false;
+        confetti = false;
 
         //Are  we ready for the party. Do we have the essentials?
-        if ( cake && drinks && frenchFries && chickenNuggets && fruits && spaghetti && burger && balloons && candles && confetti) {
-            System.out.println(completePartyScenario+ " We can party!!!");
-        }
-
-      else if ((cake && candles) && drinks && (frenchFries || fruits) && (chickenNuggets || burger || spaghetti) || (balloons || confetti)) {
+        if (cake && drinks && frenchFries && chickenNuggets && fruits && spaghetti && burger && balloons && candles && confetti) {
+            System.out.println(completePartyScenario + " We can party!!!");
+        } else if ((cake && candles) && drinks && (frenchFries || fruits) && (chickenNuggets || burger || spaghetti) || (balloons || confetti)) {
             System.out.println(basicPartyScenario + "We can party!");
-        }
-        else{
+        } else {
             System.out.println("Not ready! You need to double check your checklist!");
         }
 
+        //Method... Alternative
+
+        System.out.println( "Another party scenario --- extra method");
+        String partyScenario = "We have most of the things we need! we can Party!";
+        simplePartyScenario(partyScenario, cake, frenchFries, chickenNuggets, fruits, spaghetti, burger, balloons, candles, confetti, drinks);
 
 
     }
 
-    private static String simplePartyScenario (String partyScenario2) {
-        if ( (cake && drinks) && (frenchFries || chickenNuggets) || (fruits && spaghetti || burger) && (balloons || candles || confetti)) {
-            System.out.println(completePartyScenario+ " We can party!!!");
-        } else {
-
+    private static void simplePartyScenario(String partyScenario, boolean cake, boolean frenchFries, boolean chickenNuggets, boolean fruits, boolean spaghetti, boolean burger, boolean balloons, boolean candles, boolean confetti, boolean drinks) {
+        if ((cake && drinks) && ((frenchFries || chickenNuggets) || (fruits && spaghetti || burger)) && (balloons || candles || confetti)) {
+            System.out.println(partyScenario);
         }
     }
 }
+
