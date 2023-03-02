@@ -8,6 +8,7 @@ public class HouseWarmingParty {
     // Declare variables with meaningful name and appropriate data types
 
       String friend;
+      // TODO: You're not using the gift variable - yet?
       String gift;
       boolean expensiveGift;
       boolean usefulGift;
@@ -43,6 +44,7 @@ public class HouseWarmingParty {
 
 
     }
+    // TODO: I like this idea^^
     private static void showBestFriend ( String friend, boolean goodFriend) {
         if (goodFriend) {
             System.out.println(friend + ", you are really my best friend! " );

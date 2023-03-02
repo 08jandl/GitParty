@@ -8,6 +8,7 @@ public class CocktailParty {
         //Declare variables with meaningful names and appropriate data types
         String cocktailName;
         String alcohol;
+        // TODO: What do low, medium and high stand for? Perhaps you could rename them or use them in a way that makes clear what they are?
         boolean low;
         boolean medium;
         boolean high;

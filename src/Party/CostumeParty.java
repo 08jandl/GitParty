@@ -7,6 +7,7 @@ public class CostumeParty {
 
         //Declare variables with meaningful names and appropriate data types
 
+        // TODO: Good work!
         String guest;
         String thema;
         boolean isinCostume;

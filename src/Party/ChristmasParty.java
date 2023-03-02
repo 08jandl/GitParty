@@ -8,6 +8,7 @@ public class ChristmasParty {
 
 
         // 2) Declare variables with meaningful names and appropriate data types
+        // TODO: still lots of unused variables, I would love to see what you were thinking of making them do ;)
         String songTitle;
         String songWriter;
         boolean atmospheric;

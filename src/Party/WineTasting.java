@@ -6,6 +6,7 @@ public class WineTasting {
         System.out.println("I chose the wine party because after programming I need some relaxing activities such wine tasting ");
 
         //meaningful names and data types for variables
+        // TODO: great variety of variables!
         String wineBrand;
         int BottleAge = 10;
         boolean tasty;

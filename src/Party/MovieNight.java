@@ -15,7 +15,7 @@ public class MovieNight {
         boolean bathroomBreak;
 
         boolean goodTime;
-        boolean tooLong;
+        boolean tooLong; // TODO: You can remove this variable if you're not using it
 
 
 
@@ -77,6 +77,7 @@ public class MovieNight {
 
     }
 
+    // TODO: Great methods! I especially like the bathroom one ^^
     private static void printMovieNightSuccess(String movieTitle, boolean goodTime) {
 
         if (goodTime) {

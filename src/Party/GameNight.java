@@ -10,9 +10,9 @@ public class GameNight {
         System.out.println(startMessage);
 
         Scanner putInLetter = new Scanner(System.in);
-
+        // TODO: you probably wanted to get a letter from the scanner here? Not only a month below? The warning in your switch would go away then ;)
         String letter = " ";
-        int month = 0;
+        int month = 0; // TODO: you don't need that 0 here
 
         System.out.println("Enter first letter: ");
 
@@ -65,6 +65,6 @@ public class GameNight {
             case 12 -> System.out.println("Cuddle-bug");
             case default -> System.out.println("Oh...I didn't know the year has more the 12 months. Enter 01 - 12.");
         }
-
+// TODO: I absolutely love your defaults
     }
 }

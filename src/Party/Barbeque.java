@@ -7,6 +7,7 @@ public class Barbeque {
         boolean isFriedChicken = false;
         int corn = 2;
 
+        // TODO: this if-else would work great as its own method!
         if (isCorn && corn >= 2 || isFriedChicken) {
             System.out.println(guest + " is happy. :)");
         } else {
@@ -18,7 +19,7 @@ toMuchCorn(corn2);
     }
 
     public static void toMuchCorn(int corn2) {
-
+        // TODO: it would make this method even better if you also used the guest as a parameter, so you can change it, so Nora's mom isn't always getting bloated ;)
         String guest2 = "Nora's mom";
         if (corn2 >= 5) {
 

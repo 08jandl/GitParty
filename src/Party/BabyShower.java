@@ -7,6 +7,7 @@ public class BabyShower {
 
         //Declare variables with meaningful names and appropriate data types
 
+        //TODO: variable names should always be lower case
         boolean Friends;
         boolean Family;
         boolean Others;
@@ -44,6 +45,7 @@ public class BabyShower {
     }
 
 
+    //TODO: method names should also always be lower case
     public static void MoreFood (boolean orderMoreFood) {
         if (orderMoreFood) {
             System.out.println("Please order more food");

@@ -20,7 +20,7 @@ public class Rave {
         artists = "ABBA";
         rockMashup = true;
         dance = false;
-        headbang = true;
+        headbang = true; //TODO: You never use this variable, even though you reassign it a few times
         goodSong = true;
         songTitle = "Dancing queen";
         party=true;
@@ -75,6 +75,7 @@ public class Rave {
 
     }
 
+    // TODO: Nice work
     private static void partyHard(String songtitle, String artists, String musicType, boolean goodSong, boolean party) {
         if (goodSong||party) {
 

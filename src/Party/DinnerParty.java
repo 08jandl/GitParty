@@ -17,7 +17,7 @@ public class DinnerParty {
             System.out.println("Welcome on Board");
         } else {
             System.out.println("Better Luck Next Time");
-
+// TODO: always be careful with curly brackets when commenting out code
 //        }
 //
 //        System.out.println( "Please write your name");

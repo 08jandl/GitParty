@@ -9,6 +9,7 @@ public class BirthdayParty {
         //First, let us provide the details of the Party
         Scanner celebrant = new Scanner(System.in);
         System.out.println("Who's going to celebrate his birthday? ");
+        // TODO: you should use the result of your scanner
         String celebrantName = celebrant.nextLine();
 
         Scanner when = new Scanner(System.in);
@@ -23,12 +24,14 @@ public class BirthdayParty {
         System.out.println("What time is the party? ");
         String partyTime = time.nextLine();
 
+        // TODO: the comment no longer reflects what you coded ;)
         //Now we are going to invite 11 kids to the party.
         int guests = 0;
 
         for (int i = 0; i < 5; i++) {
             Scanner guest = new Scanner(System.in);
             System.out.println("Guest" + guests + ": ");
+            // TODO: you are not using your scanner here either
             String guestName = guest.nextLine();
             guests = guests + 1;
         }
@@ -68,6 +71,7 @@ public class BirthdayParty {
         confetti = false;
 
         //Are  we ready for the party. Do we have the essentials?
+        // TODO: these long logical equations can also be stored in variables, then you could reuse them & give them a name that makes it easier to read
         if (cake && drinks && frenchFries && chickenNuggets && fruits && spaghetti && burger && balloons && candles && confetti) {
             System.out.println(completePartyScenario + " We can party!!!");
         } else if ((cake && candles) && drinks && (frenchFries || fruits) && (chickenNuggets || burger || spaghetti) || (balloons || confetti)) {
