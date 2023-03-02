@@ -76,11 +76,28 @@ public class BirthdayParty {
             System.out.println("Not ready! You need to double check your checklist!");
         }
 
-        //Method... Alternative
-
-        System.out.println( "Another party scenario --- extra method");
+        //Create and use at least 1 method
+        System.out.println("--------------------------------------------------------------------------");
         String partyScenario = "We have most of the things we need! we can Party!";
         simplePartyScenario(partyScenario, cake, frenchFries, chickenNuggets, fruits, spaghetti, burger, balloons, candles, confetti, drinks);
+
+
+        //Reassigning variables to use a second time
+        System.out.println("--------------------------------------------------------------------------");
+        cake = false;
+        drinks = true;
+        frenchFries = true;
+        chickenNuggets = false;
+        fruits = false;
+        spaghetti = false;
+        burger = true;
+        balloons = true;
+        candles = true;
+        confetti = false;
+
+        //Re-use at least 1 method
+        String partyScenario2 = "We have most of the things we need! we can Party!";
+        simplePartyScenario(partyScenario2, cake, frenchFries, chickenNuggets, fruits, spaghetti, burger, balloons, candles, confetti, drinks);
 
 
     }
@@ -88,6 +105,9 @@ public class BirthdayParty {
     private static void simplePartyScenario(String partyScenario, boolean cake, boolean frenchFries, boolean chickenNuggets, boolean fruits, boolean spaghetti, boolean burger, boolean balloons, boolean candles, boolean confetti, boolean drinks) {
         if ((cake && drinks) && ((frenchFries || chickenNuggets) || (fruits && spaghetti || burger)) && (balloons || candles || confetti)) {
             System.out.println(partyScenario);
+        }
+        else {
+            System.out.println("No Party! You need to prepare more!");
         }
     }
 }
