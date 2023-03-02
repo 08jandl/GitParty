@@ -14,6 +14,7 @@ public class CostumeParty {
         boolean costumeIsFunny;
         boolean goodCostume;
         boolean amazingCostume;
+        boolean themaCostume;
 
         //Initialize your variables
         guest = "Yasmin";
@@ -26,10 +27,11 @@ public class CostumeParty {
         //create at least 1 logical equation using your variables
         goodCostume = isinCostume && (costumeIsFunny && !costumeIsThemaBased);
         amazingCostume = isinCostume && (costumeIsFunny && costumeIsThemaBased);
+        themaCostume = isinCostume && (costumeIsThemaBased && !costumeIsFunny);
 
 
         //Create and (re-)use at least 1 methode
-        coolGuest(guest, thema, goodCostume,amazingCostume);
+        coolGuest(guest, thema, goodCostume,amazingCostume,themaCostume);
 
 
         //reassigning variables to use second time
@@ -44,20 +46,40 @@ public class CostumeParty {
         //create at least 1 logical equation using your variables
         goodCostume = isinCostume && (costumeIsFunny && !costumeIsThemaBased);
         amazingCostume = isinCostume && (costumeIsFunny && costumeIsThemaBased);
+        themaCostume = isinCostume && (costumeIsThemaBased && !costumeIsFunny);
 
 
         //Create and (re-)use at least 1 methode
-        coolGuest(guest, thema,goodCostume,amazingCostume);
+        coolGuest(guest, thema,goodCostume,amazingCostume, themaCostume);
+
+        //Initialize your variables
+        guest = "Mike";
+        isinCostume = true;
+        costumeIsThemaBased = true;
+        costumeIsFunny = false;
+
+
+        //create at least 1 logical equation using your variables
+        goodCostume = isinCostume && (costumeIsFunny && !costumeIsThemaBased);
+        amazingCostume = isinCostume && (costumeIsFunny && costumeIsThemaBased);
+        themaCostume = isinCostume && (costumeIsThemaBased && !costumeIsFunny);
+
+
+        //Create and (re-)use at least 1 methode
+        coolGuest(guest, thema,goodCostume,amazingCostume, themaCostume);
 
 
     }
 
     //Create and (re)-use at least 1 method
-    private static void coolGuest(String guest, String thema, boolean goodCostume, boolean amazingCostume) {
+    private static void coolGuest(String guest, String thema, boolean goodCostume, boolean amazingCostume, boolean themaCostume) {
         if (amazingCostume) {
             System.out.println(guest + " had an amazing outfit, it was funny and hit the " + thema);
         } else if (goodCostume) {
             System.out.println(guest + " wasn't " + thema + " dressed but it was funny ");
+        } else if (themaCostume) {
+            System.out.println(guest + " had a " + thema + " outfit but it don't look funny. ");
+
         } else
             System.out.println(guest + " hadn't a Costume.");
     }
