@@ -24,20 +24,20 @@ public class BirthdayParty {
         String partyTime = time.nextLine();
 
         //Now we are going to invite 11 kids to the party.
-        int guests = 1;
-        if (guests < 6) {
-            for (int i = 1; i < 5; i++) {
+        int guests = 0;
+
+            for (int i = 0; i < 5; i++) {
                 Scanner guest = new Scanner(System.in);
                 System.out.println("Guest" + guests + ": ");
                 String guestName = guest.nextLine();
                 guests = guests + 1;
             }
 
-
-        }
         System.out.println("Total number of guests: " + guests);
-        System.out.println("We have enough number of guests! Don't Give out anymore invitations");
 
+            if (guests==5) {
+                System.out.println("We have enough number of guests! Don't Give out anymore invitations");
+            }
         //Do we have all the things we need for the party:
         String basicPartyScenario;
         String completePartyScenario;
@@ -91,3 +91,4 @@ public class BirthdayParty {
         }
     }
 }
+
